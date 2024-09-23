@@ -1,0 +1,56 @@
+                                                                Module-3 
+                                                                  Part-A
+1)Define the following MASKS in slash notation (/n). 
+a) 255.0.0.0 b)255.255.224.0 c)255.255.255.0 d)255.255.240.0
+
+Answer:
+
+We first change the mask to binary to find the number of 1’s:
+
+a. 11111111 11111111 11111111 00000000 → /24
+
+b. 11111111 00000000 00000000 00000000 → /8
+
+c. 11111111 11111111 11100000 00000000 → /19
+
+d. 11111111 11111111 11110000 00000000 → /20
+
+
+a. The mask 255.255.255.0 has 24 consecutive 1s, so slash notation results :/24
+b. The mask 255.0.0.0 has 8 consecutive 1s, so slash notation results :/8
+c. The mask 255.255.224.0 has 19 consecutive 1s, so slash notation results :/19
+d. The mask 255.255.240.0 has 20 consecutive 1s, so slash notation results :/20
+
+2)Why are we running out of IPv4 addresses? How does IPv6 solve this problem?
+
+Ans:We've run out of IPv4 addresses, not IPv6
+
+This is largely because of technologies like network address translation (NAT), which maps many private IP addresses onto one public IP. There are also markets that sell and reallocate old IPv4 addresses for reuse.
+
+IPv6 uses 128-bit addresses as opposed to the 32-bit addresses used by IPv4, allowing for a substantially larger number of possible addresses.
+
+3)Find the class of the following IP addresses. 
+a)237.14.2.1 b) 208.35.54.12 c)129.14.6.8  d) 114.34.2.8
+
+Ans:a. The first byte is 237(from 224.0.0.0 to 239.255.255.255) → Class D
+
+b. The first byte is 208 (from 192.0.0.0 to 223.255.255.255) → Class C
+
+c. The first byte is 129 (from 128.0.0.0 to 191.255.255.255) → Class B
+
+d. The first byte is 114 (from 1 to 126) → Class A
+
+Note:
+
+Class is A and the IP range 1-126
+
+Class is B and the IP range 128-191
+
+Class is C and the IP range 192-223
+
+Class is D and the IP range 224-239
+
+Class is E and the IP range 240-255
+
+(127.0.0.0 is a loopback address.)
+
